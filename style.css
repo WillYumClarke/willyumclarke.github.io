@@ -1,0 +1,19 @@
+body{
+  text-align: center;
+  background-color: #313338;
+  color: #dbdee1;
+  margin: 10px;
+  font-family: "consolas", sans-serif;
+}
+
+#link{
+  display: inline-block;
+  margin-right: 1px;
+}
+#git{
+  display: inline-block;
+  margin-right: 1px;
+}
+submit{
+  color : #dbdee1;
+}

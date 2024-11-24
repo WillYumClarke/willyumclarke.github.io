@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="William Clarke">
+    <meta http-equiv="refresh" content="30">
+    
+    <title>Yumtage</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1>Welcome to My Website</h1>
-      <p>Your simple and elegant landing page</p>
+    <div id="title">
+    <h1>Yumtage</h1>
+    <p>My name is William Clarke and welcome to Yumtage</p>
+    <p>This is a place for me to post projects I am working on and showcase my programming skills</p>
     </div>
-  </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>
-        This is a simple website to showcase a landing page design.
-        We are committed to creating clean and minimalist web pages that are easy to navigate and aesthetically pleasing.
-      </p>
+
+
+    <div id = "projects">
+    <h2>Projects</h2>
+    <a href="alphabet.html">Alphabet Reordering</a>
     </div>
-  </section>
 
-  <!-- Contact Us Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form>
-        <label for="name">Name:</label>
+
+
+    <div id="skills">
+        <h2>Skills</h2>
+        <p>Languages: Python, HTML, CSS, C/C++, JS, PHP, SQL, VBA</p>
+        <p>Frameworks: Django, MySQL, Apache, Node.js</p>
+        <p>Tools: VSCode, Git, Github</p>
+    </div>
+
+
+
+    <div id = "links">
+    <h2>My Links</h2>
+    <a href="https://www.linkedin.com/in/william-clarke-371759313/" target="_blank" id="link">
+        <img src="/images/linkedin.png" height = 50 alt="linkedin logo" title="linkedin.com/WilliamClarke">
+    </a><a href="https://github.com/WillYumClarke" target="_blank" id="git">
+        <img src="/images/github.png" height = 50 alt="github logo" title="github.com/WillYumClarke">
+    </a>
+    </div>
+
+
+
+    <div id = "contact">
+    <h2>Contact me</h2>
+
+    <form action="contact.php" method="POST">
+
+        <label for="name" style="display: block;"">Your name:</label>
         <input type="text" id="name" name="name" placeholder="Your Name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-        
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+        </div>
 
+        <br>
+
+
+        <label for="email" style="display: block;"">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your@email.com" required>
+
+        <br>
+
+        <label for="message" style="display: block;">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+        <br>
+        <input type="submit" value="Submit" id="submit">
+
+
+    </form>
+    </div>
 </body>
 </html>
